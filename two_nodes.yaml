@@ -1,0 +1,44 @@
+apiVersion: kubeflow.org/v1
+kind: MPIJob
+metadata:
+  name: myjob-cuda
+  labels:
+    cuda-aware-mpi: "true"
+spec:
+  slotsPerWorker: 4
+  runPolicy:
+    cleanPodPolicy: Running 
+  mpiReplicaSpecs:
+    Launcher:
+      restartPolicy: OnFailure
+      replicas: 1
+      template:
+        metadata:
+          labels:
+            mount-eos: "true" 
+            mount-cvmfs: "true" 
+            mount-afs: "true" 
+            home: "eos"
+        spec:
+          containers:
+          - image: registry.cern.ch/ngt/lxplus-like:9
+            name: launcher
+            command: ["/usr/bin/tini", "--", "sleep", "infinity"]
+    Worker:
+      replicas: 2 
+      template:
+        metadata:
+          labels:
+            mount-eos: "true" 
+            mount-cvmfs: "true" 
+            mount-afs: "true" 
+            home: "eos" 
+        spec:
+          containers:
+          - image: registry.cern.ch/ngt/lxplus-like:9 
+            name: worker
+            resources:
+              limits:
+                nvidia.com/gpu: 4 
+          nodeSelector:
+            nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
