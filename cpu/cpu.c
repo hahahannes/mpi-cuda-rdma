@@ -29,10 +29,15 @@ int main(int argc, char *argv[])
 		Loop from 8 B to 1 GB
 	--------------------------------------------------------------------------------------------*/
 
-	for(int i=0; i<=27; i++){
+	int loop_count = atoi(argv[1]);
+	printf("Loop until %d", loop_count);
+
+	for(int i=0; i<=loop_count; i++){
 
 		long int N = 1 << i;
-	
+		if(rank == 0) {
+			printf("Ping-Pong Transfer %d/%d\n", i, loop_count);
+		}
    	 	// Allocate memory for A on CPU
 		double *A = (double*)malloc(N*sizeof(double));
 
@@ -82,9 +87,14 @@ int main(int argc, char *argv[])
 		double avg_time_per_transfer = elapsed_time / (2.0*(double)loop_count);
 
 		if(rank == 0) {
-			printf("Transfer size (B): %10li, Transfer Time (s): %15.9f, Bandwidth (GB/s): %15.9f\n", num_B, avg_time_per_transfer, num_GB/avg_time_per_transfer );
-			fptr = fopen("cpu.txt", "a");
-			fprintf(fptr, "%10li,%15.9f,%15.9f\n", num_B, avg_time_per_transfer, num_GB/avg_time_per_transfer);
+			printf("Transfer size (B): %10li, Transfer size (GB): %15.9f, Transfer Time (s): %15.9f, Bandwidth (GB/s): %15.9f\n", num_B, num_GB, avg_time_per_transfer, num_GB/avg_time_per_transfer );
+			FILE *fptr; 
+			fptr = fopen("cpu.csv", "a");
+			if (fptr == NULL) {
+				perror("Error opening file");
+				return 1;
+			}
+			fprintf(fptr, "%li,%.9f,%.9f\n", num_B, avg_time_per_transfer, num_GB/avg_time_per_transfer);
 			fclose(fptr);
 		}
 		free(A);
