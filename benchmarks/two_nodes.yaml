@@ -1,9 +1,7 @@
 apiVersion: kubeflow.org/v1
 kind: MPIJob
 metadata:
-  name: myjob-cuda
-  labels:
-    cuda-aware-mpi: "true"
+  name: benchmark
 spec:
   slotsPerWorker: 4
   runPolicy:
@@ -21,11 +19,11 @@ spec:
             home: "eos"
         spec:
           containers:
-          - image: registry.cern.ch/ngt/lxplus-like:9
+          - image: registry.cern.ch/hhansen/e2e-lxplus
             name: launcher
-            command: ["/usr/bin/tini", "--", "sleep", "infinity"]
+            command: ["sleep", "infinity"]
     Worker:
-      replicas: 2 
+      replicas: 1
       template:
         metadata:
           labels:
@@ -35,10 +33,10 @@ spec:
             home: "eos" 
         spec:
           containers:
-          - image: registry.cern.ch/ngt/lxplus-like:9 
+          - image: registry.cern.ch/hhansen/e2e-lxplus
             name: worker
             resources:
               limits:
-                nvidia.com/gpu: 4 
+                nvidia.com/gpu: 1 
           nodeSelector:
             nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3

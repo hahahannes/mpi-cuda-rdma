@@ -1,0 +1,21 @@
+- Single Node (SXM as they have GPUDirect)
+no networking involved
+    - 2 ranks with 1 GPU each
+        - CPU (very slow)
+        - Not CUDA aware - staging (faster)
+        - CUDA aware - no GDRCopy P2P - staging (same)
+        - CUDA aware - GDRCopy P2P (fastest)
+
+- Multi Node (SXM as they have Infiniband)
+    - 2 nodes with 1 ranks with 1 GPU each (GDRCopy P2P not applicable)
+        - CPU (slow)
+        - Not CUDA aware - staging (faster)
+        - CUDA aware - no GDRCopy RDMA - staging (same?)
+        - CUDA aware - GDRCopy RDMA (fastest)
+    - 2 nodes with 2 ranks each with 1 GPU each (for P2P)
+        - CPU
+        - Not CUDA aware - staging
+        - CUDA aware - no GDR at all - staging
+        - CUDA aware - no GDRCopy P2P/with GDR RDMA - staging
+        - CUDA aware - with GDRCopy P2P/no GDR RDMA - staging
+        - CUDA aware - with both GDR - staging (fastest?)
