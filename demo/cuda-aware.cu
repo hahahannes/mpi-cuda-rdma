@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 
 	MPI_Status stat;
+	int tag1 = 10;
+	int tag2 = 20;
 
 	if(size != 2){
 		if(rank == 0){
