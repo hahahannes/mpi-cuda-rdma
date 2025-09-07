@@ -10,10 +10,10 @@ LIBRARIES = -L/usr/lib64/openmpi/lib
 compile-cpu: cpu.c
 	$(MPICOMP) -c cpu.c -o cpu
 
-compile-gpu: gpu.c
+compile-gpu: gpu.cu
 	$(CUCOMP) $(CUFLAGS) $(LIBRARIES) $(INCLUDES) gpu.cu -o gpu -lmpi
 
-compile-cuda-aware: cuda-aware.c
+compile-cuda-aware: cuda-aware.cu
 	$(CUCOMP) $(CUFLAGS) $(LIBRARIES) $(INCLUDES) cuda-aware.cu -o cuda-aware -lmpi
 
 run-cpu:
@@ -29,3 +29,7 @@ run-cuda-aware-disable-rdma:
 # TODO test
 # TODO TLS=tcp,sm instead
 	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=no -x UCX_LOG_LEVEL=info -x UCX_TLS=rc,sm,cuda_copy ./cuda-aware
+
+run-cuda-aware-enabled-rdma:
+# TODO test
+	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=yes -x UCX_LOG_LEVEL=info -x UCX_TLS=rc,sm,cuda ./cuda-aware

@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		exit(0);
 	}
 
-	long int N = 1 << i;
+	long int N = 2;
 	double *A = (double*)malloc(N*sizeof(double));
 
 	double start_time, stop_time, elapsed_time;
