@@ -29,6 +29,8 @@ int main(int argc, char *argv[])
 	cudaMalloc(&DATA_DEVICE, N*sizeof(double));
 	cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);
 	
+	double start_time, stop_time, elapsed_time;
+	start_time = MPI_Wtime();
 
 	if(rank == 0){
 		cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost);
@@ -42,6 +44,13 @@ int main(int argc, char *argv[])
 		cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost);
 		MPI_Send(DATA, N, MPI_DOUBLE, 0, tag2, MPI_COMM_WORLD);
 	}
+
+	stop_time = MPI_Wtime();
+	elapsed_time = stop_time - start_time;
+	fprintf("%li,%.9f,%.9f\n", elapsed_time);
+
+	cudaFree(d_A);
+	free(A);
 
 	MPI_Finalize();
 

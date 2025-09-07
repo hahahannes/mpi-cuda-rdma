@@ -25,6 +25,9 @@ int main(int argc, char *argv[])
 	long int N = 1 << i;
 	double *A = (double*)malloc(N*sizeof(double));
 
+	double start_time, stop_time, elapsed_time;
+	start_time = MPI_Wtime();
+	
 	if(rank == 0){
 		MPI_Send(A, N, MPI_DOUBLE, 1, tag1, MPI_COMM_WORLD);
 		MPI_Recv(A, N, MPI_DOUBLE, 1, tag2, MPI_COMM_WORLD, &stat);
@@ -33,6 +36,12 @@ int main(int argc, char *argv[])
 		MPI_Recv(A, N, MPI_DOUBLE, 0, tag1, MPI_COMM_WORLD, &stat);
 		MPI_Send(A, N, MPI_DOUBLE, 0, tag2, MPI_COMM_WORLD);
 	}
+
+	stop_time = MPI_Wtime();
+	elapsed_time = stop_time - start_time;
+	fprintf("%li,%.9f,%.9f\n", elapsed_time);
+
+	free(A);
 
 	MPI_Finalize();
 
