@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 
 	stop_time = MPI_Wtime();
 	elapsed_time = stop_time - start_time;
-	fprintf("%.9f\n", elapsed_time);
+	printf("%.9f\n", elapsed_time);
 
 	cudaFree(DATA_DEVICE);
 	free(DATA);
