@@ -24,9 +24,18 @@ int main(int argc, char *argv[])
 		exit(0);
 	}
 
-	long int N = 2;
-
+	size_t N = 6553600;  // 50 MB worth of doubles
 	double *DATA = (double*)malloc(N*sizeof(double));
+
+	if (DATA == NULL) {
+        fprintf(stderr, "Memory allocation failed\n");
+        return 1;
+    }
+
+    for (size_t i = 0; i < N; i++) {
+        DATA[i] = 0.0;
+    }
+
 	double *DATA_DEVICE;
 	cudaMalloc(&DATA_DEVICE, N*sizeof(double));
 	cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);

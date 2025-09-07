@@ -26,10 +26,10 @@ run-gpu:
 	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/gpu
 
 run-cuda-aware:
-	mpirun -n 2 ./cuda-aware
+	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/cuda-aware
 
 run-cuda-aware-disable-rdma:
-# TODO test
+# TODO test on sxm with cudaware mpi
 # TODO TLS=tcp,sm instead
 	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=no -x UCX_LOG_LEVEL=info -x UCX_TLS=rc,sm,cuda_copy ./cuda-aware
 

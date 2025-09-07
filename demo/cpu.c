@@ -24,8 +24,18 @@ int main(int argc, char *argv[])
 		exit(0);
 	}
 
-	long int N = 2;
+	size_t N = 6553600;  // 50 MB worth of doubles
 	double *A = (double*)malloc(N*sizeof(double));
+
+
+    if (A == NULL) {
+        fprintf(stderr, "Memory allocation failed\n");
+        return 1;
+    }
+
+    for (size_t i = 0; i < N; i++) {
+        A[i] = 0.0;
+    }
 
 	double start_time, stop_time, elapsed_time;
 	start_time = MPI_Wtime();
