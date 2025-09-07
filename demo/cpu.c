@@ -33,14 +33,14 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-	printf("Initialize random data")
+	printf("Initialize random data");
     for (size_t i = 0; i < N; i++) {
         A[i] = 0.0;
     }
 
 	double start_time, stop_time, elapsed_time;
 	start_time = MPI_Wtime();
-	printf("Start sending and receiving data")
+	printf("Start sending and receiving data");
 
 	if(rank == 0){
 		MPI_Send(A, N, MPI_DOUBLE, 1, tag1, MPI_COMM_WORLD);
