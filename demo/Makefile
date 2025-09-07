@@ -5,7 +5,12 @@ CUFLAGS = -arch=sm_70
 OMPI_DIR = /usr/lib64/openmpi
 
 INCLUDES  = -I/usr/include/openmpi-x86_64
-LIBRARIES = -L/usr/lib64/openmpi/lib
+
+# For non cuda aware mpi
+#LIBRARIES = -L/usr/lib64/openmpi/lib 
+
+# For cuda aware MPI
+LIBRARIES = -L/usr/local/mpi/lib
 
 compile-cpu: cpu.c
 	$(MPICOMP) cpu.c -o cpu
