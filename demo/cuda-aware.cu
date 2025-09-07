@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
 	elapsed_time = stop_time - start_time;
 	fprintf("%li,%.9f,%.9f\n", elapsed_time);
 
-	cudaFree(d_A);
-	free(A);
+	cudaFree(DATA_DEVICE);
+	free(DATA);
 	
 	MPI_Finalize();
 
