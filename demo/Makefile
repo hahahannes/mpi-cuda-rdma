@@ -8,19 +8,22 @@ INCLUDES  = -I/usr/include/openmpi-x86_64
 LIBRARIES = -L/usr/lib64/openmpi/lib
 
 compile-cpu: cpu.c
-	$(MPICOMP) -c cpu.c -o cpu
+	$(MPICOMP) cpu.c -o cpu
+	chmod +x ./cpu
 
 compile-gpu: gpu.cu
 	$(CUCOMP) $(CUFLAGS) $(LIBRARIES) $(INCLUDES) gpu.cu -o gpu -lmpi
+	chmod +x ./gpu
 
 compile-cuda-aware: cuda-aware.cu
 	$(CUCOMP) $(CUFLAGS) $(LIBRARIES) $(INCLUDES) cuda-aware.cu -o cuda-aware -lmpi
+	chmod +x ./cuda-aware
 
 run-cpu:
-	mpirun -n 2 ./cpu
+	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/cpu
 
 run-gpu:
-	mpirun -n 2 ./gpu
+	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/gpu
 
 run-cuda-aware:
 	mpirun -n 2 ./cuda-aware
