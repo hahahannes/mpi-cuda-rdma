@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <mpi.h>
 
+// Macro for checking errors in CUDA API calls
+#define cudaErrorCheck(call)                                                              \
+do{                                                                                       \
+	cudaError_t cuErr = call;                                                             \
+	if(cudaSuccess != cuErr){                                                             \
+		printf("CUDA Error - %s:%d: '%s'\n", __FILE__, __LINE__, cudaGetErrorString(cuErr));\
+		exit(0);                                                                            \
+	}                                                                                     \
+}while(0)
+
 int main(int argc, char *argv[])
 {
 	MPI_Init(&argc, &argv);
@@ -37,8 +47,8 @@ int main(int argc, char *argv[])
     }
 
 	double *DATA_DEVICE;
-	cudaMalloc(&DATA_DEVICE, N*sizeof(double));
-	cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);
+	cudaErrorCheck(cudaMalloc(&DATA_DEVICE, N*sizeof(double)));
+	cudaErrorCheck(cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice));
 	
 
 	double start_time, stop_time, elapsed_time;
@@ -57,7 +67,7 @@ int main(int argc, char *argv[])
 	elapsed_time = stop_time - start_time;
 	printf("%.9f\n", elapsed_time);
 
-	cudaFree(DATA_DEVICE);
+	cudaErrorCheck(cudaFree(DATA_DEVICE));
 	free(DATA);
 	
 	MPI_Finalize();

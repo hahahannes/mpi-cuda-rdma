@@ -2,6 +2,16 @@
 #include <stdlib.h>
 #include <mpi.h>
 
+// Macro for checking errors in CUDA API calls
+#define cudaErrorCheck(call)                                                              \
+do{                                                                                       \
+	cudaError_t cuErr = call;                                                             \
+	if(cudaSuccess != cuErr){                                                             \
+		printf("CUDA Error - %s:%d: '%s'\n", __FILE__, __LINE__, cudaGetErrorString(cuErr));\
+		exit(0);                                                                            \
+	}                                                                                     \
+}while(0)
+
 int main(int argc, char *argv[])
 {
 	MPI_Init(&argc, &argv);
@@ -37,22 +47,22 @@ int main(int argc, char *argv[])
         DATA[i] = 0.0;
     }
 
-	cudaMalloc(&DATA_DEVICE, N*sizeof(double));
-	cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);
+	cudaErrorCheck(cudaMalloc(&DATA_DEVICE, N*sizeof(double)));
+	cudaErrorCheck(cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice));
 	
 	double start_time, stop_time, elapsed_time;
 	start_time = MPI_Wtime();
 
 	if(rank == 0){
-		cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost);
+		cudaErrorCheck(cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost));
 		MPI_Send(DATA, N, MPI_DOUBLE, 1, tag1, MPI_COMM_WORLD);
 		MPI_Recv(DATA, N, MPI_DOUBLE, 1, tag2, MPI_COMM_WORLD, &stat);
-		cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);
+		cudaErrorCheck(cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice));
 	}
 	else if(rank == 1){
 		MPI_Recv(DATA, N, MPI_DOUBLE, 0, tag1, MPI_COMM_WORLD, &stat);
-		cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice);
-		cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost);
+		cudaErrorCheck(cudaMemcpy(DATA_DEVICE, DATA, N*sizeof(double), cudaMemcpyHostToDevice));
+		cudaErrorCheck(cudaMemcpy(DATA, DATA_DEVICE, N*sizeof(double), cudaMemcpyDeviceToHost));
 		MPI_Send(DATA, N, MPI_DOUBLE, 0, tag2, MPI_COMM_WORLD);
 	}
 
@@ -60,7 +70,7 @@ int main(int argc, char *argv[])
 	elapsed_time = stop_time - start_time;
 	printf("%.9f\n", elapsed_time);
 
-	cudaFree(DATA_DEVICE);
+	cudaErrorCheck(cudaFree(DATA_DEVICE));
 	free(DATA);
 
 	MPI_Finalize();

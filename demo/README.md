@@ -2,7 +2,7 @@
 Supported by the Platform via `MpiJobs` for interactive sessions and job submission.
 
 ## Non-CUDA-aware MPI
-Developer has to copy data back and forth between GPU and host memory before using the MPI API.
+Developer has to manually stage data in host memory in order to send and receive data from GPU memory.
 
 ```
 # on H100 NVL node
@@ -21,9 +21,62 @@ make run-gpu
 ## CUDA-aware MPI
 CUDA-aware MPI allows MPI to directly send/receive GPU memory buffers (i.e., memory allocated with cudaMalloc) without requiring manual staging through host (CPU) memory.
 
-### With RDMA
-If RDMA is available (e.g., using InfiniBand with GPUDirect RDMA), the GPU memory can be directly accessed by the NIC (Network Interface Card).
-Data stays on the GPU and is transferred directly over the network, avoiding the host CPU entirely.
+### Intra Node 
+(#### CPU memory)
+- Shared memory 
+
+#### GPU memory
+- Staging through Host memory (`UCX_TLS=cuda_copy`)
+- Peer-to-Peer access directly between GPUs (`UCX_TLS=cuda_ipc`)
+
+### Inter Node
+(#### CPU memory)
+- TCP (`UCX_TLS=tcp`)
+- RDMA (`UCX_TLS=rc`) 
+
+#### GPU memory
+- Staging through Host memory (`UCX_TLS=cuda_copy`)
+    - GPU → Host: Data is first copied from GPU memory to host (CPU) memory.
+    - MPI Transfer: The host memory is used for MPI communication (standard network transfer).
+    - Host → GPU: On the receiving end, data is copied back from host memory to the GPU memory.
+- Using RDMA allowing network adapters (NICs) to directly read/write from/to GPU memory without involving host memory (`UCX_TLS=gdr_copy`)
+
+Without any configuration UCX will select the most appropriate transport. Fallback to staging.
+
+```
+# Use TCP for host memory transport
+# Use staging through host memory for GPU memory transport (No RDMA for GPU memory, No P2P)
+UCX_TLS=tcp,cuda_copy
+# 0.06/0.06
+```
+
+```
+# Use RDMA for host memory transport
+# Use staging through host memory for GPU memory transport (No RDMA for GPU memory, No P2P)
+UCX_TLS=rc,cuda_copy
+# 0.09/0.06
+```
+```
+# Use RDMA for host memory transport
+# Use RDMA for GPU memory transport inter-node
+# USE P2P for GPU memory transport intra-node
+UCX_TLS=rc,gdr_copy,cuda_ipc
+# Fails
+```
+```
+# Use RDMA for host memory transport
+# Use RDMA for GPU memory transport inter-node
+# Use staging through host memory for GPU memory transport intra-node
+UCX_TLS=rc,gdr_copy,cuda_copy
+# 0.09/0.05
+```
+```
+# Use RDMA for host memory
+# USE P2P for GPU memory transport intra-node
+# Use staging through host memory for GPU memory transport inter-node
+UCX_TLS=rc,cuda_copy,cuda_ipc
+# 0.04/0.07
+```
 
 ```
 # On H100 SXM node
@@ -31,13 +84,6 @@ make compile-cuda-aware
 make run-cuda-aware
 Output:
 ```
-
-### Without RDMA
-Without RDMA, CUDA-aware MPI will fall back to staging Through Host Memory
-
-- GPU → Host: Data is first copied from GPU memory to host (CPU) memory.
-- MPI Transfer: The host memory is used for MPI communication (standard network transfer).
-- Host → GPU: On the receiving end, data is copied back from host memory to the GPU memory.
 
 ```
 make compile-cuda-aware
@@ -67,6 +113,7 @@ mpirun -np 2 -x UCX_NET_DEVICES=mlx5_0:1 ./app
 ```
 
 UCX is integrated into Open MPI as a pml layer:
+Force to only use UCX (no fallback in case of error)
 ```
 -mca pml ucx 
 ```
@@ -81,6 +128,9 @@ FROM nvidia slides:
 To run without any GPUDirect flavor set UCX_TLS to only include cuda_copy, e.g. UCX_TLS=rc,sm,cuda_copy and
 UCX_IB_GPU_DIRECT_RDMA=no (rc transport uses GPUDirect RDMA otherwise).
 
+```
+mpirun -np 2 -x UCX_NET_DEVICES=mlx5_0:1 -x UCX_TLS=rc,sm,cuda_copy -x UCX_IB_GPU_DIRECT_RDMA=no ./app
+```
 
 TODO
 run lqft with and without rdma on 2 nodes 

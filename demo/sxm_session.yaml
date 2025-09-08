@@ -22,6 +22,8 @@ spec:
           - image: registry.cern.ch/ngt/lxplus-like:cuda-aware-mpi
             name: launcher
             command: ["/usr/bin/tini", "--", "sleep", "infinity"]
+            securityContext:
+              runAsUser: 0
             resources:
               limits:
                 nvidia.com/gpu: 1 
@@ -40,6 +42,8 @@ spec:
           containers:
           - image: registry.cern.ch/ngt/lxplus-like:cuda-aware-mpi
             name: worker
+            securityContext:
+              runAsUser: 0
             resources:
               limits:
                 nvidia.com/gpu: 1 

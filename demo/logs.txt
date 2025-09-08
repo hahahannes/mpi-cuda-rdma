@@ -1,0 +1,1044 @@
+[1757336592.061660] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:304  UCX  DEBUG added sys_dev 3 for bus id 29:00.0
+[1757336592.061665] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:560  UCX  DEBUG mlx5_1: bdf_name 0000:29:00.0 sys_dev 3
+[1757336592.061682] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:532  UCX  DEBUG mlx5_1: vendor_id 0x15b3 device_id 4129
+[1757336592.062978] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1953 UCX  DEBUG mlx5_1: mkey_by_name_reserve is not supported
+[1757336592.062983] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1936 UCX  DEBUG mlx5_1: dp_ordering support: force=1 ooo_rw_rc=1 ooo_rw_dc=1
+[1757336592.063331] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1705 UCX  DEBUG mlx5_1: ODP is supported, version 2: memory=host
+[1757336592.063603] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x1edb8e0 [id=39 ref 1] uct_ib_async_event_handler() to hash
+[1757336592.063622] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 39 events 0x1 mode thread_spinlock
+[1757336592.063625] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:643  UCX  DEBUG initialized device 'mlx5_1' (InfiniBand channel adapter) with 1 ports
+[1757336592.063633] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_1: cuda GPUDirect RDMA is not detected by checking /sys/kernel/mm/memory_peers/nv_mem/version
+[1757336592.063643] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_1: cuda GPUDirect RDMA is not detected by checking /sys/module/nvidia_peermem/version
+[1757336592.063647] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_1: cuda GPUDirect RDMA is not detected by checking /sys/module/nv_peer_mem/version
+[1757336592.063653] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_1: rocm GPUDirect RDMA is not detected by checking /dev/kfd
+[1757336592.063663] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1244 UCX  DEBUG mlx5_1: dmabuf is supported
+[1757336592.063668] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool devx dbrec: align 64, maxelems 4294967295, elemsize 40
+[1757336592.064075] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2444 UCX  DEBUG mlx5_1: opened DEVX md log_max_qp=17
+[1757336592.065282] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_1: KSM dm memory registration status "Success" range 0x7f64c4c37000..0x7f64c4c37020 iova 0x0 mkey_index 0x0
+[1757336592.065803] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_1: KSM atomic-key memory registration status "Success" range (nil)..0x20 iova 0x7f64c4c37000 atomic mkey_index 0x0
+[1757336592.067094] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1202 UCX  DEBUG mlx5_1: relaxed order memory access is disabled
+[1757336592.067769] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_1: KSM flush-mr memory registration status "Success" range 0x1e62000..0x1e62008 iova 0x0 mkey_index 0x0
+[1757336592.068005] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.h:998  UCX  DEBUG mlx5dv_devx_general_cmd(ALLOW_OTHER_VHCA_ACCESS) failed on mlx5_1, syndrome 0x172df6: Remote I/O error
+[1757336592.068009] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2497 UCX  DEBUG mlx5_1: XGVMI is not supported
+[1757336592.068012] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1062 UCX  DEBUG mlx5_1: md open by 'uct_ib_mlx5_devx_md_ops' is successful
+[1757336592.077571] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          uct_md.c:96   UCX  DEBUG failed to query srd resources: No such device
+[1757336592.081301] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1784 UCX  DEBUG register host memory on: mlx5_0, mlx5_1, mlx5_2, mlx5_3
+[1757336592.081311] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1784 UCX  DEBUG register cuda memory on: gdr_copy
+[1757336592.081314] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering cuda-managed memory
+[1757336592.081317] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rocm memory
+[1757336592.081319] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rocm-managed memory
+[1757336592.081322] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rdma memory
+[1757336592.081324] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-host memory
+[1757336592.081326] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-device memory
+[1757336592.081328] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-managed memory
+[1757336592.081384] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rcache_mp: align 8, maxelems 4294967295, elemsize 144
+[1757336592.081580] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:2412 UCX  DEBUG created ucp context ucp_context_0 0x23ca180 [8 mds 20 tls] features 0x1 tl bitmap 0xfffff 0x0
+[1757336592.084230] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_efa_md.c:39   UCX  DEBUG efadv_query_device(mlx5_2) failed: 95
+[1757336592.084695] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         mm_sysv.c:97   UCX  DEBUG   mm failed to allocate 33023 bytes with hugetlb
+[1757336592.085104] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mm_recv_desc: align 64, maxelems 4294967295, elemsize 8368
+[1757336592.085340] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1058 UCX  DEBUG mlx5_2: md open by 'uct_ib_efa_md_ops' failed, trying next
+[1757336592.085375] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         mm_sysv.c:97   UCX  DEBUG   mm failed to allocate 4292720 bytes with hugetlb
+[1757336592.085400] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool mm_recv_desc: allocated chunk 0x7fb245133018 of 4296680 bytes with 512 elements
+[1757336592.086996] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_iface.c:734  UCX  DEBUG created mm iface 0x2522d30 FIFO id 0xc va 0x7fb247f63000 size 36864 (128 x 256 elems)
+[1757336592.087066] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[0]=0x2522d30 using sysv/memory on worker 0x2493d30
+[1757336592.087223] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:607  UCX  DEBUG   allocated posix shared memory at 0x7fb247f5a000 length 36864
+[1757336592.087251] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mm_recv_desc: align 64, maxelems 4294967295, elemsize 8368
+[1757336592.089339] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:373  UCX  DEBUG   shared memory mmap(addr=(nil), length=6291456, flags= HUGETLB, fd=47) failed: Invalid argument
+[1757336592.089361] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:607  UCX  DEBUG   allocated posix shared memory at 0x7fb244d1a000 length 4296704
+[1757336592.089371] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool mm_recv_desc: allocated chunk 0x7fb244d1a018 of 4296680 bytes with 512 elements
+[1757336592.090082] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_iface.c:734  UCX  DEBUG created mm iface 0x246b040 FIFO id 0xd000000b4000001d va 0x7fb247f5a000 size 36864 (128 x 256 elems)
+[1757336592.090102] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[1]=0x246b040 using posix/memory on worker 0x2493d30
+[1757336592.090153] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[2]=0x246ba80 using gdr_copy/cuda on worker 0x2493d30
+[1757336592.090514] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.092218] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.092283] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.092286] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.092427] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.093264] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.093273] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.093843] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x24b67b0 created RC QP 0xc9e on mlx5_0:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.094818] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:938  UCX  DEBUG /sys/class/infiniband/mlx5_2: PF sysfs path is '/sys/devices/pci0000:a7/0000:a7:01.0/0000:a8:00.0/0000:a9:01.0/0000:ac:00.0'
+[1757336592.094858] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:304  UCX  DEBUG added sys_dev 4 for bus id ac:00.0
+[1757336592.094864] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:560  UCX  DEBUG mlx5_2: bdf_name 0000:ac:00.0 sys_dev 4
+[1757336592.094881] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:532  UCX  DEBUG mlx5_2: vendor_id 0x15b3 device_id 4129
+[1757336592.094952] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[3]=0x24b67b0 using rc_verbs/mlx5_0:1 on worker 0x2493d30
+[1757336592.095214] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.096023] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1953 UCX  DEBUG mlx5_2: mkey_by_name_reserve is not supported
+[1757336592.096030] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1936 UCX  DEBUG mlx5_2: dp_ordering support: force=1 ooo_rw_rc=1 ooo_rw_dc=1
+[1757336592.096403] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1705 UCX  DEBUG mlx5_2: ODP is supported, version 2: memory=host
+[1757336592.096862] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x1ed8300 [id=41 ref 1] uct_ib_async_event_handler() to hash
+[1757336592.096875] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 41 events 0x1 mode thread_spinlock
+[1757336592.096879] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:643  UCX  DEBUG initialized device 'mlx5_2' (InfiniBand channel adapter) with 1 ports
+[1757336592.096885] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_2: cuda GPUDirect RDMA is not detected by checking /sys/kernel/mm/memory_peers/nv_mem/version
+[1757336592.096890] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_2: cuda GPUDirect RDMA is not detected by checking /sys/module/nvidia_peermem/version
+[1757336592.096894] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_2: cuda GPUDirect RDMA is not detected by checking /sys/module/nv_peer_mem/version
+[1757336592.096899] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_2: rocm GPUDirect RDMA is not detected by checking /dev/kfd
+[1757336592.096909] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1244 UCX  DEBUG mlx5_2: dmabuf is supported
+[1757336592.096918] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool devx dbrec: align 64, maxelems 4294967295, elemsize 40
+[1757336592.096734] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.096749] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.097348] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2444 UCX  DEBUG mlx5_2: opened DEVX md log_max_qp=17
+[1757336592.097509] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x2701250 created UD QP 0x2093 on mlx5_0:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.098582] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_2: KSM dm memory registration status "Success" range 0x7f64c4c32000..0x7f64c4c32020 iova 0x0 mkey_index 0x0
+[1757336592.098978] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_2: KSM atomic-key memory registration status "Success" range (nil)..0x20 iova 0x7f64c4c32000 atomic mkey_index 0x0
+[1757336592.098754] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.099263] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb247ed5018 of 544744 bytes with 128 elements
+[1757336592.099270] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.099306] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80::e09d:7303:2:8c3e to hash on device mlx5_0 port 1 index 0)
+[1757336592.099324] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 1)
+[1757336592.099336] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 2)
+[1757336592.099349] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 3)
+[1757336592.099362] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 4)
+[1757336592.099375] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 5)
+[1757336592.099387] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 6)
+[1757336592.099401] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2701250: adding gid fe80:: to hash on device mlx5_0 port 1 index 7)
+[1757336592.099796] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.100543] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1202 UCX  DEBUG mlx5_2: relaxed order memory access is disabled
+[1757336592.101200] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_2: KSM flush-mr memory registration status "Success" range 0x1ed2000..0x1ed2008 iova 0x0 mkey_index 0x0
+[1757336592.101558] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.h:998  UCX  DEBUG mlx5dv_devx_general_cmd(ALLOW_OTHER_VHCA_ACCESS) failed on mlx5_2, syndrome 0x172df6: Remote I/O error
+[1757336592.101563] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2497 UCX  DEBUG mlx5_2: XGVMI is not supported
+[1757336592.101566] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1062 UCX  DEBUG mlx5_2: md open by 'uct_ib_mlx5_devx_md_ops' is successful
+[1757336592.103209] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x248fbe0 [id=49 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.103236] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 49 events 0x5 mode thread_spinlock
+[1757336592.103278] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[4]=0x2701250 using ud_verbs/mlx5_0:1 on worker 0x2493d30
+[1757336592.103677] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.103729] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:1480 UCX  DEBUG max IB CQE size is 128
+[1757336592.104241] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x2599010 of 8176 bytes with 127 elements
+[1757336592.106368] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.106380] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.106383] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.106419] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.107352] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.107605] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_0:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.108483] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.108492] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.111689] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          uct_md.c:96   UCX  DEBUG failed to query srd resources: No such device
+[1757336592.112012] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x259d500 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.112035] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 51 events 0x1 mode thread_spinlock
+[1757336592.112111] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[5]=0x24dd7c0 using rc_mlx5/mlx5_0:1 on worker 0x2493d30
+[1757336592.114576] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.115771] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.115779] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.116362] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x284d360 created UD QP 0x2096 on mlx5_0:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.116377] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.117009] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.117522] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb247e50018 of 544744 bytes with 128 elements
+[1757336592.117530] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.117558] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80::e09d:7303:2:8c3e to hash on device mlx5_0 port 1 index 0)
+[1757336592.117570] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 1)
+[1757336592.117583] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 2)
+[1757336592.117595] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 3)
+[1757336592.117607] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 4)
+[1757336592.117619] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 5)
+[1757336592.117630] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 6)
+[1757336592.117648] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x284d360: adding gid fe80:: to hash on device mlx5_0 port 1 index 7)
+[1757336592.118077] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_0:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.118114] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.118916] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_efa_md.c:39   UCX  DEBUG efadv_query_device(mlx5_3) failed: 95
+[1757336592.120391] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1058 UCX  DEBUG mlx5_3: md open by 'uct_ib_efa_md_ops' failed, trying next
+[1757336592.122556] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2be98d0 [id=53 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.122582] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 53 events 0x5 mode thread_spinlock
+[1757336592.122623] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[6]=0x284d360 using ud_mlx5/mlx5_0:1 on worker 0x2493d30
+[1757336592.123075] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.124419] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.124432] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.124435] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.124463] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.125081] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.125086] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.125578] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x2d6db90 created RC QP 0xbbd on mlx5_1:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.126146] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[7]=0x2d6db90 using rc_verbs/mlx5_1:1 on worker 0x2493d30
+[1757336592.126394] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.127484] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.127490] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.128126] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x27ab2e0 created UD QP 0x200e on mlx5_1:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.129209] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.129735] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb24757b018 of 544744 bytes with 128 elements
+[1757336592.129742] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.129767] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80::e09d:7303:2:8a06 to hash on device mlx5_1 port 1 index 0)
+[1757336592.129779] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 1)
+[1757336592.129792] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 2)
+[1757336592.129804] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 3)
+[1757336592.129817] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 4)
+[1757336592.129830] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 5)
+[1757336592.129841] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 6)
+[1757336592.129853] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27ab2e0: adding gid fe80:: to hash on device mlx5_1 port 1 index 7)
+[1757336592.130134] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.130142] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2d6b300 [id=55 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.130154] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 55 events 0x5 mode thread_spinlock
+[1757336592.130173] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[8]=0x27ab2e0 using ud_verbs/mlx5_1:1 on worker 0x2493d30
+[1757336592.130448] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.130501] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:938  UCX  DEBUG /sys/class/infiniband/mlx5_3: PF sysfs path is '/sys/devices/pci0000:b7/0000:b7:01.0/0000:b8:00.0/0000:b9:00.0/0000:ba:00.0'
+[1757336592.130598] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:304  UCX  DEBUG added sys_dev 5 for bus id ba:00.0
+[1757336592.130607] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]            topo.c:560  UCX  DEBUG mlx5_3: bdf_name 0000:ba:00.0 sys_dev 5
+[1757336592.130659] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:532  UCX  DEBUG mlx5_3: vendor_id 0x15b3 device_id 4129
+[1757336592.130960] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x2be5010 of 8176 bytes with 127 elements
+[1757336592.131955] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1953 UCX  DEBUG mlx5_3: mkey_by_name_reserve is not supported
+[1757336592.131961] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1936 UCX  DEBUG mlx5_3: dp_ordering support: force=1 ooo_rw_rc=1 ooo_rw_dc=1
+[1757336592.132346] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:1705 UCX  DEBUG mlx5_3: ODP is supported, version 2: memory=host
+[1757336592.132709] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x1ed96e0 [id=43 ref 1] uct_ib_async_event_handler() to hash
+[1757336592.132735] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 43 events 0x1 mode thread_spinlock
+[1757336592.132741] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:643  UCX  DEBUG initialized device 'mlx5_3' (InfiniBand channel adapter) with 1 ports
+[1757336592.132752] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_3: cuda GPUDirect RDMA is not detected by checking /sys/kernel/mm/memory_peers/nv_mem/version
+[1757336592.132760] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_3: cuda GPUDirect RDMA is not detected by checking /sys/module/nvidia_peermem/version
+[1757336592.132766] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_3: cuda GPUDirect RDMA is not detected by checking /sys/module/nv_peer_mem/version
+[1757336592.132776] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1217 UCX  DEBUG mlx5_3: rocm GPUDirect RDMA is not detected by checking /dev/kfd
+[1757336592.132792] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1244 UCX  DEBUG mlx5_3: dmabuf is supported
+[1757336592.132799] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool devx dbrec: align 64, maxelems 4294967295, elemsize 40
+[1757336592.133241] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2444 UCX  DEBUG mlx5_3: opened DEVX md log_max_qp=17
+[1757336592.133225] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.133237] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.133240] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.133274] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.134292] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_3: KSM dm memory registration status "Success" range 0x7f64c4c2d000..0x7f64c4c2d020 iova 0x0 mkey_index 0x0
+[1757336592.134197] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.134604] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_3: KSM atomic-key memory registration status "Success" range (nil)..0x20 iova 0x7f64c4c2d000 atomic mkey_index 0x0
+[1757336592.134547] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_1:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.135527] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.135532] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.135543] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2d6b340 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.135555] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 57 events 0x1 mode thread_spinlock
+[1757336592.135585] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[9]=0x2d29240 using rc_mlx5/mlx5_1:1 on worker 0x2493d30
+[1757336592.135712] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1202 UCX  DEBUG mlx5_3: relaxed order memory access is disabled
+[1757336592.136488] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:140  UCX  DEBUG mlx5_3: KSM flush-mr memory registration status "Success" range 0x1edd000..0x1edd008 iova 0x0 mkey_index 0x0
+[1757336592.136728] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.h:998  UCX  DEBUG mlx5dv_devx_general_cmd(ALLOW_OTHER_VHCA_ACCESS) failed on mlx5_3, syndrome 0x172df6: Remote I/O error
+[1757336592.136735] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2497 UCX  DEBUG mlx5_3: XGVMI is not supported
+[1757336592.136740] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           ib_md.c:1062 UCX  DEBUG mlx5_3: md open by 'uct_ib_mlx5_devx_md_ops' is successful
+[1757336592.137988] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.139438] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.139445] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.140022] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x2598020 created UD QP 0x2011 on mlx5_1:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.140029] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.141066] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.141552] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb2474f6018 of 544744 bytes with 128 elements
+[1757336592.141561] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.141586] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80::e09d:7303:2:8a06 to hash on device mlx5_1 port 1 index 0)
+[1757336592.141598] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 1)
+[1757336592.141612] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 2)
+[1757336592.141625] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 3)
+[1757336592.141645] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 4)
+[1757336592.141657] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 5)
+[1757336592.141669] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 6)
+[1757336592.141681] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2598020: adding gid fe80:: to hash on device mlx5_1 port 1 index 7)
+[1757336592.141909] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_1:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.141933] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.141940] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2af8010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.141951] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 59 events 0x5 mode thread_spinlock
+[1757336592.141968] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[10]=0x2598020 using ud_mlx5/mlx5_1:1 on worker 0x2493d30
+[1757336592.142333] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.144076] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.144087] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.144090] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.144223] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.144827] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.144833] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.145309] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x2b20060 created RC QP 0xbbd on mlx5_2:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.145763] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[11]=0x2b20060 using rc_verbs/mlx5_2:1 on worker 0x2493d30
+[1757336592.146017] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.147066] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.147072] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.147374] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          uct_md.c:96   UCX  DEBUG failed to query srd resources: No such device
+[1757336592.147587] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x293d660 created UD QP 0x2015 on mlx5_2:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.148301] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.148787] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb247471018 of 544744 bytes with 128 elements
+[1757336592.148795] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.148820] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80::e09d:7303:2:8e46 to hash on device mlx5_2 port 1 index 0)
+[1757336592.148832] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 1)
+[1757336592.148845] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 2)
+[1757336592.148858] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 3)
+[1757336592.148870] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 4)
+[1757336592.148881] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 5)
+[1757336592.148893] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 6)
+[1757336592.148906] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x293d660: adding gid fe80:: to hash on device mlx5_2 port 1 index 7)
+[1757336592.149142] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.149149] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2f76010 [id=61 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.149161] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 61 events 0x5 mode thread_spinlock
+[1757336592.149179] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[12]=0x293d660 using ud_verbs/mlx5_2:1 on worker 0x2493d30
+[1757336592.149486] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.149897] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x25a6010 of 8176 bytes with 127 elements
+[1757336592.151897] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.151928] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.151931] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.152085] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.152746] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.153066] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_2:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.153714] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.153719] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.153732] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x31c4010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.153743] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 63 events 0x1 mode thread_spinlock
+[1757336592.166770] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[13]=0x30ba0f0 using rc_mlx5/mlx5_2:1 on worker 0x2493d30
+[1757336592.168677] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.170099] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.170109] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.170703] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x25a5550 created UD QP 0x2017 on mlx5_2:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.170709] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.171438] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.171904] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb24617b018 of 544744 bytes with 128 elements
+[1757336592.171914] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.171941] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80::e09d:7303:2:8e46 to hash on device mlx5_2 port 1 index 0)
+[1757336592.171954] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 1)
+[1757336592.171966] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 2)
+[1757336592.171978] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 3)
+[1757336592.171989] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 4)
+[1757336592.172000] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 5)
+[1757336592.172012] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 6)
+[1757336592.172023] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25a5550: adding gid fe80:: to hash on device mlx5_2 port 1 index 7)
+[1757336592.172301] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_2:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.172326] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.172332] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x321e010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.172346] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 65 events 0x5 mode thread_spinlock
+[1757336592.172366] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[14]=0x25a5550 using ud_mlx5/mlx5_2:1 on worker 0x2493d30
+[1757336592.172615] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.174503] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.174534] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.174538] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.174703] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.175398] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.175404] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.175963] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x32c0010 created RC QP 0xc0c on mlx5_3:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.176877] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[15]=0x32c0010 using rc_verbs/mlx5_3:1 on worker 0x2493d30
+[1757336592.177195] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.178589] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.178595] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.179328] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x27cc320 created UD QP 0x205c on mlx5_3:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.180353] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.180851] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb2460f6018 of 544744 bytes with 128 elements
+[1757336592.180858] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.180884] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80::e09d:7303:2:8e96 to hash on device mlx5_3 port 1 index 0)
+[1757336592.180897] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 1)
+[1757336592.180910] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 2)
+[1757336592.180923] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 3)
+[1757336592.180935] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 4)
+[1757336592.180948] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 5)
+[1757336592.180960] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 6)
+[1757336592.180972] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x27cc320: adding gid fe80:: to hash on device mlx5_3 port 1 index 7)
+[1757336592.181143] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.181150] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x338a010 [id=67 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.181163] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 67 events 0x5 mode thread_spinlock
+[1757336592.181180] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[16]=0x27cc320 using ud_verbs/mlx5_3:1 on worker 0x2493d30
+[1757336592.181563] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.181992] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x2d32010 of 8176 bytes with 127 elements
+[1757336592.184079] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.184110] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.184113] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.184303] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.185160] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.185460] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_3:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.185381] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1784 UCX  DEBUG register host memory on: mlx5_0, mlx5_1, mlx5_2, mlx5_3
+[1757336592.185395] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1784 UCX  DEBUG register cuda memory on: gdr_copy
+[1757336592.185401] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering cuda-managed memory
+[1757336592.185405] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rocm memory
+[1757336592.185409] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rocm-managed memory
+[1757336592.185412] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering rdma memory
+[1757336592.185416] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-host memory
+[1757336592.185420] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-device memory
+[1757336592.185423] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:1772 UCX  DEBUG no memory domain supports registering ze-managed memory
+[1757336592.185497] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rcache_mp: align 8, maxelems 4294967295, elemsize 144
+[1757336592.185806] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     ucp_context.c:2412 UCX  DEBUG created ucp context ucp_context_0 0x1cf0190 [8 mds 20 tls] features 0x1 tl bitmap 0xfffff 0x0
+[1757336592.186247] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.186253] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.186265] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x35d8010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.186276] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 69 events 0x1 mode thread_spinlock
+[1757336592.186307] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[17]=0x34ce0f0 using rc_mlx5/mlx5_3:1 on worker 0x2493d30
+[1757336592.188704] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.190083] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.190089] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.190782] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x25aa020 created UD QP 0x205e on mlx5_3:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.190788] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.191008] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         mm_sysv.c:97   UCX  DEBUG   mm failed to allocate 33023 bytes with hugetlb
+[1757336592.191126] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mm_recv_desc: align 64, maxelems 4294967295, elemsize 8368
+[1757336592.191180] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         mm_sysv.c:97   UCX  DEBUG   mm failed to allocate 4292720 bytes with hugetlb
+[1757336592.191213] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool mm_recv_desc: allocated chunk 0x7f64bc733018 of 4296680 bytes with 512 elements
+[1757336592.191751] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.192198] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7fb246071018 of 544744 bytes with 128 elements
+[1757336592.192206] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.192233] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80::e09d:7303:2:8e96 to hash on device mlx5_3 port 1 index 0)
+[1757336592.192246] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 1)
+[1757336592.192259] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 2)
+[1757336592.192270] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 3)
+[1757336592.192285] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 4)
+[1757336592.192297] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 5)
+[1757336592.192309] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 6)
+[1757336592.192320] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x25aa020: adding gid fe80:: to hash on device mlx5_3 port 1 index 7)
+[1757336592.192613] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_3:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.192652] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.867839 usec wanted: 2499.999925 usec
+[1757336592.192657] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x3632010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.192668] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 71 events 0x5 mode thread_spinlock
+[1757336592.192685] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[18]=0x25aa020 using ud_mlx5/mlx5_3:1 on worker 0x2493d30
+[1757336592.192730] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool uct_scopy_iface_tx_mp: align 64, maxelems 4294967295, elemsize 736
+[1757336592.192749] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[19]=0x29f5b60 using cma/memory on worker 0x2493d30
+[1757336592.192757] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1150 UCX  DEBUG selected scalable tl bitmap: 0xfffff 0x0 (20 tls)
+[1757336592.193779] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_iface.c:734  UCX  DEBUG created mm iface 0x1e48270 FIFO id 0xc va 0x7f64c4175000 size 36864 (128 x 256 elems)
+[1757336592.193872] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[0]=0x1e48270 using sysv/memory on worker 0x1db9e00
+[1757336592.194119] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:607  UCX  DEBUG   allocated posix shared memory at 0x7f64c416c000 length 36864
+[1757336592.194154] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mm_recv_desc: align 64, maxelems 4294967295, elemsize 8368
+[1757336592.196991] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:373  UCX  DEBUG   shared memory mmap(addr=(nil), length=6291456, flags= HUGETLB, fd=47) failed: Invalid argument
+[1757336592.197020] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_posix.c:607  UCX  DEBUG   allocated posix shared memory at 0x7f64bc31a000 length 4296704
+[1757336592.197036] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool mm_recv_desc: allocated chunk 0x7f64bc31a018 of 4296680 bytes with 512 elements
+[1757336592.198132] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        mm_iface.c:734  UCX  DEBUG created mm iface 0x1d91050 FIFO id 0xd000000b4000001d va 0x7f64c416c000 size 36864 (128 x 256 elems)
+[1757336592.198161] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[1]=0x1d91050 using posix/memory on worker 0x1db9e00
+[1757336592.198231] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[2]=0x1d91b40 using gdr_copy/cuda on worker 0x1db9e00
+[1757336592.198784] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.200559] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.200645] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.200650] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.200825] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.201614] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.201625] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.202378] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x1e48a80 created RC QP 0xc9f on mlx5_0:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.203075] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2d36010 [id=44 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203101] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 44 events 0x0 mode thread_spinlock
+[1757336592.203151] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39ad980 [id=46 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203158] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 46 events 0x0 mode thread_spinlock
+[1757336592.203165] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39ada10 [id=48 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203171] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 48 events 0x0 mode thread_spinlock
+[1757336592.203210] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39adae0 [id=52 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203215] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 52 events 0x0 mode thread_spinlock
+[1757336592.203245] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39adaa0 [id=54 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203254] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 54 events 0x0 mode thread_spinlock
+[1757336592.203265] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39adb60 [id=58 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203291] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 58 events 0x0 mode thread_spinlock
+[1757336592.203306] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39adb20 [id=60 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203314] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 60 events 0x0 mode thread_spinlock
+[1757336592.203325] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39adba0 [id=64 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203332] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 64 events 0x0 mode thread_spinlock
+[1757336592.203346] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2d6c430 [id=66 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203356] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 66 events 0x0 mode thread_spinlock
+[1757336592.203370] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x39ad870 [id=70 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.203381] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 70 events 0x0 mode thread_spinlock
+[1757336592.203703] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[3]=0x1e48a80 using rc_verbs/mlx5_0:1 on worker 0x1db9e00
+[1757336592.204117] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.205093] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2d6c5a0 [id=72 ref 1] uct_rdmacm_cm_event_handler() to hash
+[1757336592.205110] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 72 events 0x1 mode thread_spinlock
+[1757336592.205118] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       rdmacm_cm.c:981  UCX  DEBUG created rdmacm_cm 0x2c9f1b0 with event_channel 0x2701f80 (fd=72)
+[1757336592.205149] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      tcp_sockcm.c:225  UCX  DEBUG created tcp_sockcm 0x2c9f720
+[1757336592.205356] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          ucp_ep.c:407  UCX  DEBUG created ep 0x7fb247e0a000 to <no debug data> mem_type_ep:cuda
+[1757336592.205403] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          select.c:649  UCX  ERROR   no copy across memory types transport to <no debug data>: rc_verbs/mlx5_0:1 - Destination is unreachable, rc_mlx5/mlx5_0:1 - Destination is unreachable, rc_verbs/mlx5_1:1 - Destination is unreachable, rc_mlx5/mlx5_1:1 - Destination is unreachable, rc_verbs/mlx5_2:1 - Destination is unreachable, rc_mlx5/mlx5_2
+[1757336592.205441] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2d6c5a0 [id=72 ref 1] uct_rdmacm_cm_event_handler() from hash
+[1757336592.205445] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2d6c5a0 [id=72 ref 1] uct_rdmacm_cm_event_handler()
+[1757336592.205454] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2d6c5a0 [id=72 ref 0] uct_rdmacm_cm_event_handler()
+[1757336592.205474] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2d36010 [id=44 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.205477] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2d36010 [id=44 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.205481] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2d36010 [id=44 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.205783] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.205801] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.205867] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mm_recv_desc destroyed
+[1757336592.205902] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39ad980 [id=46 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.205905] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39ad980 [id=46 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.205910] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39ad980 [id=46 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.206626] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x1fa6220 created UD QP 0x2099 on mlx5_0:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.206463] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mm_recv_desc destroyed
+[1757336592.206492] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39ada10 [id=48 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.206495] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39ada10 [id=48 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.206498] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39ada10 [id=48 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.206510] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.207058] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.207063] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.207065] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.207067] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.207631] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.207678] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x248fbe0 [id=49 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.207683] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x248fbe0 [id=49 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.207687] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x248fbe0 [id=49 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.207695] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x2701250): cep cleanup
+[1757336592.207697] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.208214] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64c40e7018 of 544744 bytes with 128 elements
+[1757336592.208224] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.208263] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80::e09d:7303:2:8c3e to hash on device mlx5_0 port 1 index 0)
+[1757336592.208286] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 1)
+[1757336592.208303] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 2)
+[1757336592.208319] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 3)
+[1757336592.208335] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 4)
+[1757336592.208350] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 5)
+[1757336592.208366] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 6)
+[1757336592.208383] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1fa6220: adding gid fe80:: to hash on device mlx5_0 port 1 index 7)
+[1757336592.208655] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.208850] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.208855] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x2701250): ptr_array cleanup
+[1757336592.209659] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39adae0 [id=52 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.209663] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39adae0 [id=52 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.209667] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39adae0 [id=52 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.209682] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x259d500 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.209685] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x259d500 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.209688] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x259d500 [id=51 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.209703] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.209707] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.211598] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.211603] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.211605] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.211607] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.213072] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2be98d0 [id=53 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.213076] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2be98d0 [id=53 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.213080] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2be98d0 [id=53 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.213083] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x284d360): cep cleanup
+[1757336592.213085] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.213281] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x1dad560 [id=49 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.213310] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 49 events 0x5 mode thread_spinlock
+[1757336592.213357] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[4]=0x1fa6220 using ud_verbs/mlx5_0:1 on worker 0x1db9e00
+[1757336592.213827] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.213892] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:1480 UCX  DEBUG max IB CQE size is 128
+[1757336592.214258] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x1e5e010 of 8176 bytes with 127 elements
+[1757336592.214246] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.214250] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x284d360): ptr_array cleanup
+[1757336592.215071] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39adaa0 [id=54 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.215076] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39adaa0 [id=54 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.215080] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39adaa0 [id=54 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.215084] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.215689] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.215694] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.215696] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.215698] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.216457] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.216471] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.216475] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.216517] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.216655] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2d6b300 [id=55 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.216660] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2d6b300 [id=55 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.216664] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2d6b300 [id=55 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.216667] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x27ab2e0): cep cleanup
+[1757336592.216670] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.217418] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.217813] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_0:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.217742] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.217747] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x27ab2e0): ptr_array cleanup
+[1757336592.218650] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.218660] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.218606] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39adb60 [id=58 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.218610] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39adb60 [id=58 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.218614] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39adb60 [id=58 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.218619] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2d6b340 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.218621] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2d6b340 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.218625] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2d6b340 [id=57 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.218635] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.218647] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.220311] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.220316] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.220318] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.220320] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.221763] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2af8010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.221767] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2af8010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.221771] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2af8010 [id=59 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.221774] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x2598020): cep cleanup
+[1757336592.221777] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.222776] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x1ec3510 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.222802] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 51 events 0x1 mode thread_spinlock
+[1757336592.222889] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[5]=0x1e037d0 using rc_mlx5/mlx5_0:1 on worker 0x1db9e00
+[1757336592.222770] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.222774] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x2598020): ptr_array cleanup
+[1757336592.223471] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39adb20 [id=60 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.223475] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39adb20 [id=60 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.223479] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39adb20 [id=60 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.223483] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.223998] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.224002] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.224004] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.224006] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.224812] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2f76010 [id=61 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.224816] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2f76010 [id=61 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.224820] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2f76010 [id=61 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.224823] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x293d660): cep cleanup
+[1757336592.224825] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.225149] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_0:1/IB
+[1757336592.225810] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.225815] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x293d660): ptr_array cleanup
+[1757336592.226346] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.226355] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.226425] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39adba0 [id=64 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.226429] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39adba0 [id=64 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.226433] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39adba0 [id=64 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.226437] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x31c4010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.226439] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x31c4010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.226443] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x31c4010 [id=63 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.226451] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.226454] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.226880] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_0: iface 0x20f2420 created UD QP 0x209b on mlx5_0:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.226894] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.227374] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.227379] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.227381] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.227384] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.227823] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.228387] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64c4061018 of 544744 bytes with 128 elements
+[1757336592.228398] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.228428] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80::e09d:7303:2:8c3e to hash on device mlx5_0 port 1 index 0)
+[1757336592.228449] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 1)
+[1757336592.228465] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 2)
+[1757336592.228484] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 3)
+[1757336592.228503] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 4)
+[1757336592.228519] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 5)
+[1757336592.228534] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 6)
+[1757336592.228553] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f2420: adding gid fe80:: to hash on device mlx5_0 port 1 index 7)
+[1757336592.228271] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x321e010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.228275] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x321e010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.228279] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x321e010 [id=65 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.228282] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x25a5550): cep cleanup
+[1757336592.228284] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.228915] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_0:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.228956] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.229197] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.229202] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x25a5550): ptr_array cleanup
+[1757336592.229686] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2d6c430 [id=66 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.229691] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2d6c430 [id=66 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.229695] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2d6c430 [id=66 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.229699] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.230218] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.230223] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.230225] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.230227] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.231147] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x338a010 [id=67 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.231152] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x338a010 [id=67 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.231156] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x338a010 [id=67 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.231159] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x27cc320): cep cleanup
+[1757336592.231161] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.232300] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.232305] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x27cc320): ptr_array cleanup
+[1757336592.233030] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x39ad870 [id=70 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.233034] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x39ad870 [id=70 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.233038] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x39ad870 [id=70 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.233042] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x35d8010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.233045] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x35d8010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.233049] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x35d8010 [id=69 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.233058] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.233060] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.234632] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x250f450 [id=53 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.234665] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 53 events 0x5 mode thread_spinlock
+[1757336592.234714] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[6]=0x20f2420 using ud_mlx5/mlx5_0:1 on worker 0x1db9e00
+[1757336592.234750] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.234754] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.234756] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.234759] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.235107] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.235706] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x3632010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.235711] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x3632010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.235716] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x3632010 [id=71 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.235718] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x25aa020): cep cleanup
+[1757336592.235721] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.236490] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.236504] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.236509] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.236546] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.236514] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.236518] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x25aa020): ptr_array cleanup
+[1757336592.236987] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool uct_scopy_iface_tx_mp destroyed
+[1757336592.237195] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         pgtable.c:618  UCX  DEBUG purge empty page table
+[1757336592.237296] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rcache_mp destroyed
+[1757336592.237339] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2413db0 [id=31 ref 1] ucs_rcache_invalidate_handler() from hash
+[1757336592.237344] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2413db0 [id=31 ref 1] ucs_rcache_invalidate_handler()
+[1757336592.237349] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2413db0 [id=31 ref 0] ucs_rcache_invalidate_handler()
+[1757336592.237052] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.237059] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[ngt-003-h100-sxm--4ug7wvdv7c43-node-2:00029] pml_ucx.c:309  Error: Failed to create UCP worker
+[1757336592.237360] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         pgtable.c:618  UCX  DEBUG purge empty page table
+[1757336592.237367] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rcache_mp destroyed
+[1757336592.237383] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_0: md=0x25b2590 md->flags=0x3f51f7f flush_rkey=0xa400
+[1757336592.237518] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x2692d30 created RC QP 0xbbe on mlx5_1:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.238032] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[7]=0x2692d30 using rc_verbs/mlx5_1:1 on worker 0x1db9e00
+[1757336592.238428] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.238474] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.238487] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_0
+[1757336592.238492] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x240ffe0 [id=37 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.238495] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x240ffe0 [id=37 ref 1] uct_ib_async_event_handler()
+[1757336592.238499] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x240ffe0 [id=37 ref 0] uct_ib_async_event_handler()
+[1757336592.239587] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.239595] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.240297] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x2090020 created UD QP 0x2014 on mlx5_1:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.240900] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_1: md=0x248cc90 md->flags=0x3f51f7f flush_rkey=0xa100
+[1757336592.241242] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.241808] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64beead018 of 544744 bytes with 128 elements
+[1757336592.241819] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.241849] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80::e09d:7303:2:8a06 to hash on device mlx5_1 port 1 index 0)
+[1757336592.241867] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 1)
+[1757336592.241884] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 2)
+[1757336592.241900] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 3)
+[1757336592.241917] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 4)
+[1757336592.241933] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 5)
+[1757336592.241948] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 6)
+[1757336592.241964] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2090020: adding gid fe80:: to hash on device mlx5_1 port 1 index 7)
+[1757336592.242357] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.242366] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x26904a0 [id=55 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.242382] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 55 events 0x5 mode thread_spinlock
+[1757336592.242404] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[8]=0x2090020 using ud_verbs/mlx5_1:1 on worker 0x1db9e00
+[1757336592.242064] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.242069] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_1
+[1757336592.242071] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x25b58d0 [id=39 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.242074] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x25b58d0 [id=39 ref 1] uct_ib_async_event_handler()
+[1757336592.242079] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x25b58d0 [id=39 ref 0] uct_ib_async_event_handler()
+[1757336592.242944] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.243433] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x2510010 of 8176 bytes with 127 elements
+[1757336592.244310] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_2: md=0x2540270 md->flags=0x3f51f7f flush_rkey=0xa800
+[1757336592.245139] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.245143] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_2
+[1757336592.245145] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x248c8f0 [id=41 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.245148] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x248c8f0 [id=41 ref 1] uct_ib_async_event_handler()
+[1757336592.245151] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x248c8f0 [id=41 ref 0] uct_ib_async_event_handler()
+[1757336592.245723] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.245737] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.245742] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.245918] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.246611] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_3: md=0x246f190 md->flags=0x3f51f7f flush_rkey=0xa000
+[1757336592.246812] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.247187] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_1:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.247786] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.247790] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_3
+[1757336592.247793] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x246d7b0 [id=43 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.247795] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x246d7b0 [id=43 ref 1] uct_ib_async_event_handler()
+[1757336592.248146] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.248152] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.248168] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x231b880 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.248182] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 57 events 0x1 mode thread_spinlock
+[1757336592.248218] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[9]=0x264e020 using rc_mlx5/mlx5_1:1 on worker 0x1db9e00
+[1757336592.248105] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x246d7b0 [id=43 ref 0] uct_ib_async_event_handler()
+[1757336592.250542] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_1:1/IB
+[1757336592.252267] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.252275] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.252970] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_1: iface 0x1e55870 created UD QP 0x2016 on mlx5_1:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.252977] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.254012] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.254527] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64beb7b018 of 544744 bytes with 128 elements
+[1757336592.254537] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.254568] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80::e09d:7303:2:8a06 to hash on device mlx5_1 port 1 index 0)
+[1757336592.254586] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 1)
+[1757336592.254603] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 2)
+[1757336592.254619] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 3)
+[1757336592.254635] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 4)
+[1757336592.254662] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 5)
+[1757336592.254678] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 6)
+[1757336592.254694] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e55870: adding gid fe80:: to hash on device mlx5_1 port 1 index 7)
+[1757336592.255080] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_1:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.255105] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.255112] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2319010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.255125] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 59 events 0x5 mode thread_spinlock
+[1757336592.255147] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[10]=0x1e55870 using ud_mlx5/mlx5_1:1 on worker 0x1db9e00
+[1757336592.255492] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.257389] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.257404] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.257408] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.257579] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.258314] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.258322] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.258979] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x243e050 created RC QP 0xbbe on mlx5_2:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.259513] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[11]=0x243e050 using rc_verbs/mlx5_2:1 on worker 0x1db9e00
+[1757336592.259678] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.261153] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.261161] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.261821] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x269d690 created UD QP 0x201a on mlx5_2:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.262603] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.263091] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64beaf6018 of 544744 bytes with 128 elements
+[1757336592.263100] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.263130] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80::e09d:7303:2:8e46 to hash on device mlx5_2 port 1 index 0)
+[1757336592.263148] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 1)
+[1757336592.263168] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 2)
+[1757336592.263184] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 3)
+[1757336592.263199] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 4)
+[1757336592.263215] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 5)
+[1757336592.263231] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 6)
+[1757336592.263247] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x269d690: adding gid fe80:: to hash on device mlx5_2 port 1 index 7)
+[1757336592.263513] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.263522] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2869010 [id=61 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.263536] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 61 events 0x5 mode thread_spinlock
+[1757336592.263556] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[12]=0x269d690 using ud_verbs/mlx5_2:1 on worker 0x1db9e00
+[1757336592.263937] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.264341] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x225f010 of 8176 bytes with 127 elements
+[1757336592.266431] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.266471] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.266475] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.266654] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.267427] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.267711] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_2:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.268519] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.268525] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.268543] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2af0010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.268555] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 63 events 0x1 mode thread_spinlock
+[1757336592.274681] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[13]=0x29e6130 using rc_mlx5/mlx5_2:1 on worker 0x1db9e00
+[1757336592.276923] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_2:1/IB
+[1757336592.278689] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.278704] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.279404] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_2: iface 0x20f1010 created UD QP 0x201c on mlx5_2:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.279414] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.280178] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.280727] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64bea71018 of 544744 bytes with 128 elements
+[1757336592.280738] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.280775] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80::e09d:7303:2:8e46 to hash on device mlx5_2 port 1 index 0)
+[1757336592.280802] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 1)
+[1757336592.280823] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 2)
+[1757336592.280843] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 3)
+[1757336592.280862] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 4)
+[1757336592.280886] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 5)
+[1757336592.280908] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 6)
+[1757336592.280931] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x20f1010: adding gid fe80:: to hash on device mlx5_2 port 1 index 7)
+[1757336592.281191] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_2:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.281227] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.281237] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2b4a010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.281257] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 65 events 0x5 mode thread_spinlock
+[1757336592.281294] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[14]=0x20f1010 using ud_mlx5/mlx5_2:1 on worker 0x1db9e00
+[1757336592.281889] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.284571] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 91 data_sz 8256
+[1757336592.284684] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8355
+[1757336592.284694] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.284964] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.286125] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.286163] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_verbs_short_desc: align 64, maxelems 4294967295, elemsize 192
+[1757336592.287167] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x2bec010 created RC QP 0xc0d on mlx5_3:1 TX wr:409 sge:5 inl:124 resp:64 RX wr:0 sge:0 resp:64
+[1757336592.287915] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[15]=0x2bec010 using rc_verbs/mlx5_3:1 on worker 0x1db9e00
+[1757336592.288460] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.290295] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.290308] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.291158] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x1e40240 created UD QP 0x2061 on mlx5_3:1 TX wr:341 sge:6 inl:124 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.292261] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.292869] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64bd77b018 of 544744 bytes with 128 elements
+[1757336592.292883] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.292925] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80::e09d:7303:2:8e96 to hash on device mlx5_3 port 1 index 0)
+[1757336592.292950] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 1)
+[1757336592.292973] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 2)
+[1757336592.292994] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 3)
+[1757336592.293020] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 4)
+[1757336592.293045] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 5)
+[1757336592.293070] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 6)
+[1757336592.293091] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x1e40240: adding gid fe80:: to hash on device mlx5_3 port 1 index 7)
+[1757336592.293443] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.293455] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2cb6010 [id=67 ref 1] uct_ud_verbs_iface_async_handler() to hash
+[1757336592.293477] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 67 events 0x5 mode thread_spinlock
+[1757336592.293510] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[16]=0x1e40240 using ud_verbs/mlx5_3:1 on worker 0x1db9e00
+[1757336592.294042] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.294582] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool devx dbrec: allocated chunk 0x2257010 of 8176 bytes with 127 elements
+[1757336592.297370] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 90 data_sz 8256
+[1757336592.297423] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_recv_desc: align 64, maxelems 4294967295, elemsize 8354
+[1757336592.297428] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_send_desc: align 64, maxelems 4294967295, elemsize 8320
+[1757336592.297672] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool send-ops-mpool: align 64, maxelems 4294967295, elemsize 48
+[1757336592.298759] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool pending-ops: align 1, maxelems 4294967295, elemsize 64
+[1757336592.299145] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_3:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.300195] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool mlx5_dm_desc: align 64, maxelems 1, elemsize 64
+[1757336592.300204] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool rc_mlx5_atomic_desc: align 64, maxelems 4294967295, elemsize 72
+[1757336592.300224] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2f04010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler() to hash
+[1757336592.300239] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 69 events 0x1 mode thread_spinlock
+[1757336592.300284] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[17]=0x2dfa0f0 using rc_mlx5/mlx5_3:1 on worker 0x1db9e00
+[1757336592.302790] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1164 UCX  DEBUG using pkey[0] 0xffff on mlx5_3:1/IB
+[1757336592.304726] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1773 UCX  DEBUG created uct_ib_iface_t headroom_ofs 12 payload_ofs 92 hdr_ofs 44 data_sz 4136
+[1757336592.304736] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:205  UCX  DEBUG create QP: max_send_sge=6 (config=6, dev=30) max_inline_data=64B (config=64B, dev=4096B) 
+[1757336592.305515] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ib_iface.c:1283 UCX  DEBUG mlx5_3: iface 0x2507050 created UD QP 0x2063 on mlx5_3:1 TX wr:256 sge:2 inl:60 resp:0 RX wr:4096 sge:1 resp:0
+[1757336592.305524] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:773  UCX  DEBUG tx wq 32768 bytes [bb=64, nwqe=512] mmio_mode bf_post
+[1757336592.306572] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_recv_skb: align 64, maxelems 4294967295, elemsize 4188
+[1757336592.307204] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:281  UCX  DEBUG mpool ud_recv_skb: allocated chunk 0x7f64bd6f6018 of 544744 bytes with 128 elements
+[1757336592.307217] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool ud_tx_skb: align 64, maxelems 4294967295, elemsize 4208
+[1757336592.307255] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80::e09d:7303:2:8e96 to hash on device mlx5_3 port 1 index 0)
+[1757336592.307278] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 1)
+[1757336592.307301] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 2)
+[1757336592.307323] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 3)
+[1757336592.307344] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 4)
+[1757336592.307369] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 5)
+[1757336592.307394] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 6)
+[1757336592.307419] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:389  UCX  DEBUG iface 0x2507050: adding gid fe80:: to hash on device mlx5_3 port 1 index 7)
+[1757336592.307764] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         ib_mlx5.c:1079 UCX  DEBUG SL=0 (AR support - no) was selected on mlx5_3:1, SLs with AR support = { <none> }, SLs without AR support = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }
+[1757336592.307802] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]     timer_wheel.c:40   UCX  DEBUG high res timer created log=23 resolution=3997.115243 usec wanted: 2499.999601 usec
+[1757336592.307811] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2f5e010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler() to hash
+[1757336592.307827] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 71 events 0x5 mode thread_spinlock
+[1757336592.307856] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[18]=0x2507050 using ud_mlx5/mlx5_3:1 on worker 0x1db9e00
+[1757336592.307927] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:136  UCX  DEBUG mpool uct_scopy_iface_tx_mp: align 64, maxelems 4294967295, elemsize 736
+[1757336592.307960] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1433 UCX  DEBUG created interface[19]=0x1da9470 using cma/memory on worker 0x1db9e00
+[1757336592.307971] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      ucp_worker.c:1150 UCX  DEBUG selected scalable tl bitmap: 0xfffff 0x0 (20 tls)
+[1757336592.322538] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2691590 [id=44 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322570] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 44 events 0x0 mode thread_spinlock
+[1757336592.322655] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1a30 [id=46 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322666] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 46 events 0x0 mode thread_spinlock
+[1757336592.322678] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1ac0 [id=48 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322686] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 48 events 0x0 mode thread_spinlock
+[1757336592.322730] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1b90 [id=52 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322741] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 52 events 0x0 mode thread_spinlock
+[1757336592.322777] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1b50 [id=54 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322788] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 54 events 0x0 mode thread_spinlock
+[1757336592.322803] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1c10 [id=58 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322813] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 58 events 0x0 mode thread_spinlock
+[1757336592.322831] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1bd0 [id=60 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322840] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 60 events 0x0 mode thread_spinlock
+[1757336592.322858] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1c50 [id=64 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322870] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 64 events 0x0 mode thread_spinlock
+[1757336592.322886] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x26915d0 [id=66 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322898] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 66 events 0x0 mode thread_spinlock
+[1757336592.322914] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x32d1920 [id=70 ref 1] ucp_worker_iface_async_fd_event() to hash
+[1757336592.322926] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 70 events 0x0 mode thread_spinlock
+[1757336592.325091] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:247  UCX  DEBUG added async handler 0x2691740 [id=72 ref 1] uct_rdmacm_cm_event_handler() to hash
+[1757336592.325110] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:521  UCX  DEBUG listening to async event fd 72 events 0x1 mode thread_spinlock
+[1757336592.325121] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       rdmacm_cm.c:981  UCX  DEBUG created rdmacm_cm 0x2f2c060 with event_channel 0x2943ff0 (fd=72)
+[1757336592.325165] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]      tcp_sockcm.c:225  UCX  DEBUG created tcp_sockcm 0x2f2c5d0
+[1757336592.325385] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          ucp_ep.c:407  UCX  DEBUG created ep 0x7f64c4019000 to <no debug data> mem_type_ep:cuda
+[1757336592.325439] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]          select.c:649  UCX  ERROR   no copy across memory types transport to <no debug data>: rc_verbs/mlx5_0:1 - Destination is unreachable, rc_mlx5/mlx5_0:1 - Destination is unreachable, rc_verbs/mlx5_1:1 - Destination is unreachable, rc_mlx5/mlx5_1:1 - Destination is unreachable, rc_verbs/mlx5_2:1 - Destination is unreachable, rc_mlx5/mlx5_2
+[1757336592.325483] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2691740 [id=72 ref 1] uct_rdmacm_cm_event_handler() from hash
+[1757336592.325488] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2691740 [id=72 ref 1] uct_rdmacm_cm_event_handler()
+[1757336592.325499] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2691740 [id=72 ref 0] uct_rdmacm_cm_event_handler()
+[1757336592.325527] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2691590 [id=44 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.325535] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2691590 [id=44 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.325540] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2691590 [id=44 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.326038] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mm_recv_desc destroyed
+[1757336592.326086] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1a30 [id=46 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.326089] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1a30 [id=46 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.326095] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1a30 [id=46 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.326813] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mm_recv_desc destroyed
+[1757336592.326850] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1ac0 [id=48 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.326854] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1ac0 [id=48 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.326859] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1ac0 [id=48 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.326872] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.327500] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.327505] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.327508] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.327511] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.328523] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1dad560 [id=49 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.328529] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1dad560 [id=49 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.328534] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1dad560 [id=49 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.328543] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x1fa6220): cep cleanup
+[1757336592.328546] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.329856] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.329863] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x1fa6220): ptr_array cleanup
+[1757336592.330685] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1b90 [id=52 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.330691] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1b90 [id=52 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.330697] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1b90 [id=52 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.330715] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1ec3510 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.330718] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1ec3510 [id=51 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.330724] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1ec3510 [id=51 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.330738] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.330744] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.332512] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.332518] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.332521] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.332525] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.333968] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x250f450 [id=53 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.333973] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x250f450 [id=53 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.333979] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x250f450 [id=53 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.333983] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x20f2420): cep cleanup
+[1757336592.333986] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.335129] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.335135] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x20f2420): ptr_array cleanup
+[1757336592.335800] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1b50 [id=54 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.335805] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1b50 [id=54 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.335811] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1b50 [id=54 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.335816] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.336409] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.336415] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.336417] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.336420] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.337353] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x26904a0 [id=55 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.337359] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x26904a0 [id=55 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.337364] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x26904a0 [id=55 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.337368] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x2090020): cep cleanup
+[1757336592.337371] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.338677] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.338683] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x2090020): ptr_array cleanup
+[1757336592.339333] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1c10 [id=58 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.339339] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1c10 [id=58 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.339345] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1c10 [id=58 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.339350] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x231b880 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.339354] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x231b880 [id=57 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.339360] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x231b880 [id=57 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.339372] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.339375] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.341232] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.341238] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.341241] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.341243] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.342547] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2319010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.342553] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2319010 [id=59 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.342559] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2319010 [id=59 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.342563] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x1e55870): cep cleanup
+[1757336592.342566] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.343663] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.343669] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x1e55870): ptr_array cleanup
+[1757336592.344487] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1bd0 [id=60 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.344493] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1bd0 [id=60 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.344498] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1bd0 [id=60 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.344504] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.344961] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.344967] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.344970] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.344973] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.345464] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2869010 [id=61 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.345470] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2869010 [id=61 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.345475] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2869010 [id=61 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.345479] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x269d690): cep cleanup
+[1757336592.345482] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.346492] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.346498] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x269d690): ptr_array cleanup
+[1757336592.347108] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1c50 [id=64 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.347114] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1c50 [id=64 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.347119] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1c50 [id=64 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.347125] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2af0010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.347129] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2af0010 [id=63 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.347133] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2af0010 [id=63 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.347142] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.347146] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.348446] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.348451] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.348454] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.348457] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.349228] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2b4a010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.349233] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2b4a010 [id=65 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.349238] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2b4a010 [id=65 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.349243] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x20f1010): cep cleanup
+[1757336592.349246] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.349897] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.349902] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x20f1010): ptr_array cleanup
+[1757336592.350515] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x26915d0 [id=66 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.350521] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x26915d0 [id=66 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.350526] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x26915d0 [id=66 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.350531] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_verbs_short_desc destroyed
+[1757336592.351057] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.351063] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.351066] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.351069] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.351974] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2cb6010 [id=67 ref 1] uct_ud_verbs_iface_async_handler() from hash
+[1757336592.351979] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2cb6010 [id=67 ref 1] uct_ud_verbs_iface_async_handler()
+[1757336592.351985] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2cb6010 [id=67 ref 0] uct_ud_verbs_iface_async_handler()
+[1757336592.351989] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x1e40240): cep cleanup
+[1757336592.351992] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.353279] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.353285] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x1e40240): ptr_array cleanup
+[1757336592.354106] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x32d1920 [id=70 ref 1] ucp_worker_iface_async_fd_event() from hash
+[1757336592.354112] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x32d1920 [id=70 ref 1] ucp_worker_iface_async_fd_event()
+[1757336592.354117] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x32d1920 [id=70 ref 0] ucp_worker_iface_async_fd_event()
+[1757336592.354123] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2f04010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler() from hash
+[1757336592.354126] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2f04010 [id=69 ref 1] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.354131] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2f04010 [id=69 ref 0] uct_rc_mlx5_devx_iface_event_handler()
+[1757336592.354142] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_mlx5_atomic_desc destroyed
+[1757336592.354145] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool mlx5_dm_desc destroyed
+[1757336592.355773] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool send-ops-mpool destroyed
+[1757336592.355778] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_send_desc destroyed
+[1757336592.355781] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rc_recv_desc destroyed
+[1757336592.355784] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool pending-ops destroyed
+[1757336592.357111] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x2f5e010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler() from hash
+[1757336592.357117] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x2f5e010 [id=71 ref 1] uct_ud_mlx5_iface_async_handler()
+[1757336592.357122] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x2f5e010 [id=71 ref 0] uct_ud_mlx5_iface_async_handler()
+[1757336592.357126] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:622  UCX  DEBUG iface(0x2507050): cep cleanup
+[1757336592.357129] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_tx_skb destroyed
+[1757336592.358089] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool ud_recv_skb destroyed
+[1757336592.358094] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]        ud_iface.c:635  UCX  DEBUG iface(0x2507050): ptr_array cleanup
+[ngt-003-h100-sxm--4ug7wvdv7c43-node-2:00029] pml_ucx.c:309  Error: Failed to create UCP worker
+[1757336592.358922] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool uct_scopy_iface_tx_mp destroyed
+[1757336592.359178] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         pgtable.c:618  UCX  DEBUG purge empty page table
+[1757336592.359238] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rcache_mp destroyed
+[1757336592.359284] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1d39dc0 [id=31 ref 1] ucs_rcache_invalidate_handler() from hash
+[1757336592.359288] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1d39dc0 [id=31 ref 1] ucs_rcache_invalidate_handler()
+[1757336592.359294] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1d39dc0 [id=31 ref 0] ucs_rcache_invalidate_handler()
+[1757336592.359307] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]         pgtable.c:618  UCX  DEBUG purge empty page table
+[1757336592.359321] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool rcache_mp destroyed
+[1757336592.359340] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_0: md=0x1ed85a0 md->flags=0x3f51f7f flush_rkey=0x35300
+[1757336592.360657] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.360673] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_0
+[1757336592.360681] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1d35ff0 [id=37 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.360684] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1d35ff0 [id=37 ref 1] uct_ib_async_event_handler()
+[1757336592.360689] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1d35ff0 [id=37 ref 0] uct_ib_async_event_handler()
+[1757336592.362957] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_1: md=0x1df9d20 md->flags=0x3f51f7f flush_rkey=0x35c00
+[1757336592.364226] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.364232] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_1
+[1757336592.364236] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1edb8e0 [id=39 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.364239] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1edb8e0 [id=39 ref 1] uct_ib_async_event_handler()
+[1757336592.364246] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1edb8e0 [id=39 ref 0] uct_ib_async_event_handler()
+[1757336592.366596] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_2: md=0x1d95260 md->flags=0x3f51f7f flush_rkey=0x39c00
+[1757336592.367393] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.367398] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_2
+[1757336592.367402] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1ed8300 [id=41 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.367405] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1ed8300 [id=41 ref 1] uct_ib_async_event_handler()
+[1757336592.367411] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1ed8300 [id=41 ref 0] uct_ib_async_event_handler()
+[1757336592.369176] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]    ib_mlx5dv_md.c:2533 UCX  DEBUG mlx5_3: md=0x1e65a10 md->flags=0x3f51f7f flush_rkey=0x37500
+[1757336592.370139] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           mpool.c:194  UCX  DEBUG mpool devx dbrec destroyed
+[1757336592.370144] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]       ib_device.c:664  UCX  DEBUG destroying ib device mlx5_3
+[1757336592.370147] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:172  UCX  DEBUG removed async handler 0x1ed96e0 [id=43 ref 1] uct_ib_async_event_handler() from hash
+[1757336592.370151] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:575  UCX  DEBUG removing async handler 0x1ed96e0 [id=43 ref 1] uct_ib_async_event_handler()
+[1757336592.370447] [ngt-003-h100-sxm--4ug7wvdv7c43-node-2:29   :0]           async.c:187  UCX  DEBUG release async handler 0x1ed96e0 [id=43 ref 0] uct_ib_async_event_handler()

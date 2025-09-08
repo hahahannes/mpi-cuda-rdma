@@ -29,6 +29,7 @@ run-cpu:
 
 run-gpu:
 	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/gpu
+# UCX will use IB also for non GPU transports!
 
 run-cuda-aware:
 	mpirun -n 2 ~/mpi-demo/mpi-cuda-rdma/demo/cuda-aware
