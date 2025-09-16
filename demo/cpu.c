@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		exit(0);
 	}
 
-	size_t N = 6553600;  // 50 MB worth of doubles
+	size_t N = 655360;  
 	double *A = (double*)malloc(N*sizeof(double));
 
 
@@ -33,14 +33,12 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-	printf("Initialize random data");
     for (size_t i = 0; i < N; i++) {
         A[i] = 0.0;
     }
 
 	double start_time, stop_time, elapsed_time;
 	start_time = MPI_Wtime();
-	printf("Start sending and receiving data");
 
 	if(rank == 0){
 		MPI_Send(A, N, MPI_DOUBLE, 1, tag1, MPI_COMM_WORLD);
@@ -53,7 +51,7 @@ int main(int argc, char *argv[])
 
 	stop_time = MPI_Wtime();
 	elapsed_time = stop_time - start_time;
-	printf("%.9f\n", elapsed_time);
+	printf("World Size: %d Rank: %d %.9fs\n", size, rank, elapsed_time);
 
 	free(A);
 

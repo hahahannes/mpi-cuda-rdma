@@ -37,8 +37,8 @@ run-cuda-aware:
 run-cuda-aware-disable-rdma:
 # TODO test on sxm with cudaware mpi
 # TODO TLS=tcp,sm instead
-	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=no -x UCX_LOG_LEVEL=info -x UCX_TLS=rc,sm,cuda_copy ./cuda-aware
+	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=no -x UCX_LOG_LEVEL=info ./cuda-aware
 
 run-cuda-aware-enabled-rdma:
 # TODO test
-	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=yes -x UCX_LOG_LEVEL=info -x UCX_TLS=rc,sm,cuda ./cuda-aware
+	mpirun -np 2 -x UCX_IB_GPU_DIRECT_RDMA=yes -x UCX_LOG_LEVEL=info ./cuda-aware

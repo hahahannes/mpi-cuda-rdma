@@ -1,7 +1,7 @@
 apiVersion: kubeflow.org/v1
 kind: MPIJob
 metadata:
-  name: demo-rdma-3
+  name: demo
 spec:
   slotsPerWorker: 1
   runPolicy:
@@ -22,11 +22,6 @@ spec:
           - image: registry.cern.ch/ngt/lxplus-like:cuda-aware-mpi
             name: launcher
             command: ["/usr/bin/tini", "--", "sleep", "infinity"]
-            resources:
-              limits:
-                nvidia.com/mig-3g.47gb: 1 
-          nodeSelector:
-            nvidia.com/gpu.product: NVIDIA-H100-NVL
     Worker:
       replicas: 2
       template:
@@ -42,6 +37,6 @@ spec:
             name: worker
             resources:
               limits:
-                nvidia.com/mig-3g.47gb: 1 
+                nvidia.com/gpu: 1
           nodeSelector:
-            nvidia.com/gpu.product: NVIDIA-H100-NVL
+            nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3

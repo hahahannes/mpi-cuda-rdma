@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		exit(0);
 	}
 
-	size_t N = 6553600;  // 50 MB worth of doubles
+	size_t N = 655360;  // 50 MB worth of doubles
 	double *DATA = (double*)malloc(N*sizeof(double));
 	double *DATA_DEVICE;
 
@@ -68,7 +68,7 @@ int main(int argc, char *argv[])
 
 	stop_time = MPI_Wtime();
 	elapsed_time = stop_time - start_time;
-	printf("%.9f\n", elapsed_time);
+	printf("World Size: %d Rank: %d %.9fs\n", size, rank, elapsed_time);
 
 	cudaErrorCheck(cudaFree(DATA_DEVICE));
 	free(DATA);

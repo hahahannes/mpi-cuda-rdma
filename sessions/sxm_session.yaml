@@ -16,10 +16,10 @@ spec:
             mount-eos: "true" 
             mount-cvmfs: "true" 
             mount-afs: "true" 
-            home: "eos"
+            #home: "eos"
         spec:
           containers:
-          - image: registry.cern.ch/ngt/lxplus-like:cuda-aware-mpi
+          - image: registry.cern.ch/ngt/mpi:openmpi-5.0.8
             name: launcher
             command: ["/usr/bin/tini", "--", "sleep", "infinity"]
             securityContext:
@@ -28,7 +28,7 @@ spec:
               limits:
                 nvidia.com/gpu: 1 
           nodeSelector:
-            nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
+            nvidia.com/gpu.product: NVIDIA-H100-NVL
     Worker:
       replicas: 2
       template:
@@ -37,15 +37,15 @@ spec:
             mount-eos: "true" 
             mount-cvmfs: "true" 
             mount-afs: "true" 
-            home: "eos" 
+            #home: "eos" 
         spec:
           containers:
-          - image: registry.cern.ch/ngt/lxplus-like:cuda-aware-mpi
+          - image: registry.cern.ch/ngt/mpi:openmpi-5.0.8
             name: worker
             securityContext:
               runAsUser: 0
             resources:
               limits:
-                nvidia.com/gpu: 1 
+                nvidia.com/gpu: 2 
           nodeSelector:
             nvidia.com/gpu.product: NVIDIA-H100-80GB-HBM3
